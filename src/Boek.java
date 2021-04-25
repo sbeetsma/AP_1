@@ -71,6 +71,7 @@ public class Boek implements Leenbaar {
         if(!this.Beschikbaar){return "Niet beschikbaar";}else{return "Beschikbaar";}
     }
 
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Boek)) return false;
@@ -80,5 +81,13 @@ public class Boek implements Leenbaar {
         if (Paginas != boek.Paginas) return false;
         if (UitgaveJaar != boek.UitgaveJaar) return false;
         return Titel != null ? Titel.equals(boek.Titel) : boek.Titel == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Titel != null ? Titel.hashCode() : 0;
+        result = 31 * result + Paginas;
+        result = 31 * result + UitgaveJaar;
+        return result;
     }
 }
