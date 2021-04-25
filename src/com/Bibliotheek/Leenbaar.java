@@ -19,4 +19,5 @@ public interface Leenbaar {
 
     String toString();
 
+    String BeschikbaarheidToString();
 }

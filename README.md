@@ -1,7 +1,11 @@
 # AP_1
 AP 1. Domain Design &amp; Implementatie.
-Java applicatie voor een bibliotheek om reseveringen te bij te houden.
-Boeken en Films kunnen maar 1 keer tegelijk gehuurd worden, een EBoek blijft beschikbaar ookal is het al gehuurd.
+Java systeem voor een bibliotheek om leningen bij te houden.
+Business rules:
+	Boeken en Films kunnen maar 1 keer tegelijk gehuurd worden, een EBoek blijft beschikbaar ookal is het al gehuurd.
+	Als er een lening gedaan wordt waar objecten inzitten die niet geleend kunnen worden, wordt de rest wel uitgeleend.
+	Wanneer leenbare objecten terug zijn gekeerd kunnen ze weer uitgeleend worden.
+
 Voer het bestand src/Main.java uit zodat de code gerunned wordt.
 
 Leenbaar: interface voor alle leenbare objecten.
