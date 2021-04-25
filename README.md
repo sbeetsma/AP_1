@@ -6,7 +6,7 @@ Business rules:
 	Als er een lening gedaan wordt waar objecten inzitten die niet geleend kunnen worden, wordt de rest wel uitgeleend.
 	Wanneer leenbare objecten terug zijn gekeerd kunnen ze weer uitgeleend worden.
 
-Voer het bestand src/Main.java uit zodat de code gerunned wordt.
+Voer het bestand src/com/Bibliotheek/Main.java uit zodat de code gerunned wordt.
 
 Leenbaar: interface voor alle leenbare objecten.
 Boek: Boek class
